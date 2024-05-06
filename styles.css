@@ -1,24 +1,35 @@
-body {
+
+body, html {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+}
+.content {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
     padding : 0px;
-    border: 0px;
     margin: 0px;
-    min-height: 100vh;
     overflow-x: hidden;
 }
-body > header{
+.content > header{
     display: flex;
     box-sizing: border-box;
     background-color:#004d99;
-    padding: 20px 20px;
+    padding: 20px 20vh;
+
     gap: 20px;
+    height: 10%;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 
-body > header > img {
-    height: 80px;
+.content > header > img {
+    height: 120%;
     width: auto;
     
 }
@@ -28,7 +39,7 @@ body > header > img {
     justify-content: center;
 }
 .header-text {
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bold;
     color: white;
 }
@@ -41,7 +52,7 @@ body > header > img {
     background-color: #99ccff;
     box-sizing: border-box;
     padding: 50px ;
-    height: 650px;
+    height: 85%;
 }
 .main-box{
     background-color: #cce6ff;
@@ -57,23 +68,28 @@ body > header > img {
 
 }
 .main-box > * {
-    font-size: 20px;
+    font-size: 1.5vw;
+
 }
 .question-info{
     display: flex;
     justify-content: space-around;
+    height: 33%;
 
 }
 .question-content{
     display: flex;
     justify-content: center;
+    height: 33%;
 }
 .options{
     display: flex;
+    height: 33%;
     justify-content: space-around;
+    align-items: center;
 }
 .option{
-    height: 100px;
+    height: 50%;
     width: 20%;
     border-radius: 20px;
     color: #00264d;
@@ -88,5 +104,5 @@ footer{
     bottom: 0;
     color: white;
     padding: 10px;
-    height: 2%;
+    height: 3%;
 }
